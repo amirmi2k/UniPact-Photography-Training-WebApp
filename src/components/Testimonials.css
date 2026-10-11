@@ -1,0 +1,113 @@
+.testimonials-section {
+  padding: 100px 0;
+  background-color: var(--bg-surface);
+  position: relative;
+}
+
+.testimonials-inner-card {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  box-shadow: var(--shadow-subtle);
+  position: relative;
+}
+
+.quote-icon {
+  color: var(--accent-gold);
+  opacity: 0.25;
+  margin-bottom: 16px;
+}
+
+.stars-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.testimonial-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 32px;
+  min-height: 120px;
+}
+
+.testimonial-author {
+  margin-bottom: 32px;
+}
+
+.couple-names {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 4px;
+}
+
+.couple-venue {
+  display: block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.couple-date {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Controls */
+.testimonial-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-btn {
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.carousel-btn:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--border-gold);
+  color: var(--accent-gold);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: all var(--transition-fast);
+}
+
+.dot.active {
+  background: var(--accent-gold);
+  width: 24px;
+  border-radius: 4px;
+}

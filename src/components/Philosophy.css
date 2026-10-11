@@ -1,0 +1,115 @@
+.philosophy-section {
+  padding: 120px 0;
+  background-color: var(--bg-base);
+}
+
+.philosophy-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .philosophy-container {
+    grid-template-columns: 5fr 7fr;
+    gap: 80px;
+  }
+}
+
+.artist-portrait-frame {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.artist-portrait-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: contrast(1.05) brightness(0.95);
+  transition: transform 0.8s var(--transition-smooth);
+}
+
+.artist-portrait-frame:hover .artist-portrait-img {
+  transform: scale(1.03);
+}
+
+.portrait-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background: rgba(14, 14, 18, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-gold);
+  padding: 14px 20px;
+  border-radius: 2px;
+}
+
+.portrait-badge span {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--text-primary);
+}
+
+.portrait-badge small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.philosophy-body {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.philosophy-pillars {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+@media (min-width: 600px) {
+  .philosophy-pillars {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pillar-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.pillar-icon {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.pillar-item h5 {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.pillar-item p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
